@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Steam Clone</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo"><a href="index.html">STEAM</a></div>
+    <nav>
+      <ul>
+        <li><a href="#">Loja</a></li>
+        <li><a href="#">Comunidade</a></li>
+        <li><a href="#">Sobre</a></li>
+        <li><a href="#">Suporte</a></li>
+      </ul>
+    </nav>
+    <div class="login-button">
+      <button>Entrar</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="banner">
+      <h1>Bem-vindo à Steam</h1>
+      <p>Explore, compre e jogue os melhores jogos no PC</p>
+      <button onclick="scrollToGames()">Ver Jogos Populares</button>
+    </section>
+
+    <section class="games-section" id="destaques">
+      <h2>Jogos em Destaque</h2>
+      <div class="games-grid">
+        <div class="game-card">
+          <a href="jogo1.html">
+            <img src="images/jogo1.jpg" alt="Jogo 1" />
+            <h3>Fallout 4 VR</h3>
+            <p>R$ 49,99</p>
+          </a>
+        </div>
+        <div class="game-card">
+          <a href="Game_Pages/jogo1.html">
+            <img src="images/jogo2.jpg" alt="Jogo 2" />
+            <h3>Jogo 2</h3>
+            <p>R$ 89,90</p>
+          </a>
+        </div>
+        <div class="game-card">
+          <a href="jogo3.html">
+            <img src="images/jogo3.jpg" alt="Jogo 3" />
+            <h3>Jogo 3</h3>
+            <p>Gratuito</p>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Valve Corporation. Todos os direitos reservados. Clone educativo.</p>
+  </footer>
+
+  <script>
+    function scrollToGames() {
+      document.getElementById('destaques').scrollIntoView({
+        behavior: 'smooth'
+      });
+    }
+  </script>
+</body>
+</html>
